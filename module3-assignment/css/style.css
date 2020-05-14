@@ -1,0 +1,128 @@
+#header-nav
+{
+	background-color:#bfbfbf;
+	border:1px solid;
+	border-radius:0;
+  height:75px;
+}
+h1
+{
+	color:black;
+	margin:20px 20px 20px;
+	font-size:42px;
+	font-weight: bold;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  color:black;
+  font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top:-10;
+  margin-bottom:10;
+  margin-left:-20px;
+  line-height: .75;
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top:10px;
+  background-color: lightgreen;
+}
+#nav-list a {
+  color:black;
+  text-align: center;
+  font-size:16px;
+  height:50px;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 2.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -20px;
+}
+/**End of Header Part**/
+  
+
+.jumbotron
+{
+  position: relative;
+  margin-top:0px;
+  padding:0;
+  box-shadow:0 0 50px white;
+  border:2px solid white;
+  background-color: white;
+}
+h3
+{
+  text-align: center;
+}
+.chicken
+{
+  background-color:#bfbfbf;
+  margin-top:10px;
+}
+.beef
+{
+  background-color:#bfbfbf;
+  margin-top:20px;
+}
+.sushi
+{
+  background-color:#bfbfbf;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+@media(min-width:1200px) /**For PC screen**/
+{
+
+}
+
+@media(min-width:992px) and (max-width:1199px) /**For Tablet screen**/
+{
+.navbar-brand h1
+{
+  margin-top:-30px;
+}
+
+} 
+
+@media(max-width:991px) /**For Mobile view**/
+{
+  .navbar-brand h1 {
+  color:black;
+  font-size: 3.0em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top:-10;
+  margin-bottom:10;
+  margin-left:0px;
+  line-height: .75;
+
+}
+  #nav-list
+  {
+     margin-top:0px;
+  }
+.jumbotron
+{
+  position:relative;
+  margin-top:130px;
+}
+}
