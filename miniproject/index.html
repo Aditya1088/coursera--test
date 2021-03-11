@@ -1,0 +1,470 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://kit.fontawesome.com/fd21094edb.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+<title>OLS: Online Learning Site</title>
+</head>
+<body>
+	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">  Physics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="questionbank.html">  Question Bank</a></li>
+                    <li class="nav-item"><a class="nav-link" href="askthequestion.html">  Ask the Question</a></li>
+
+
+
+                 </ul>  
+                 <span class="navbar-text">
+                     
+                     <a id="loginBtn">
+                         Login
+                     </a>
+                 </span> 
+
+
+            </div>
+
+
+        </div>
+    </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="model-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">LOGIN</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                     <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                         </div>
+                     </form>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+<header>
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Physics</h1>
+                    <div class="card card-body bg-light">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“The important thing is not to stop questioning. Curiosity has its own reason for existence. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery each day.</p>
+                        <footer class="blockquote-footer">Albert Einstein
+                            <cite title="Source Title">"Old Man's Advice to Youth: 'Never Lose a Holy Curiosity.'" LIFE Magazine (2 May 1955) p. 64”</cite></footer>
+                    </blockquote>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+</header>
+<div class="container">
+	<p>
+	</p>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <b><span class="text-center" style="color:black">FORCES</span></b>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+      	<p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#typesofforce" aria-expanded="false" aria-controls="typesofforce">
+    Types of Force
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gravitational" aria-expanded="false" aria-controls="gravitational">
+    Gravitational Force
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#electromagnetic" aria-expanded="false" aria-controls="electromagnetic">
+    Electromagnetic Force
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nuclear" aria-expanded="false" aria-controls="nuclear">
+    Nuclear Force
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nflm" aria-expanded="false" aria-controls="nflm">
+    Newton's First Law of Motion
+  </button>
+  <hr/>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nslm" aria-expanded="false" aria-controls="nslm">
+    Newton's Second Law of Motion
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ntlm" aria-expanded="false" aria-controls="ntlm">
+    Newton's Third Law of Motion
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#inertia" aria-expanded="false" aria-controls="inertia">
+    Inertia
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#friction" aria-expanded="false" aria-controls="friction">
+    Friction force
+  </button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tff" aria-expanded="false" aria-controls="tff">
+    Type of Friction Force
+  </button>
+</p>
+<div class="collapse" id="typesofforce">
+  <div class="card card-body">
+    The various types of forces in nature can be grouped in four categories :-
+    (i) Gravitational Force
+    (ii) Electromagnetic Force
+    (iii) Nuclear Force
+    (iv) Weak Force
+  </div>
+</div>
+<div class="collapse" id="gravitational">
+  <div class="card card-body">
+   Any two bodies attract each other by virtue of their masses and this attractive force is called as Gravitational force. The force of attraction between two point masses is F = (G*m1*m2)/r^2 where m1 and m2 are the masses of the particle and r is the distance between them and G is the universal constant having the value 6.67 * 10^-11 N-m^2/kg^2.
+  </div>
+</div>
+<div class="collapse" id="electromagnetic">
+  <div class="card card-body">
+   The electromagnetic force is a type of physical interaction that occurs between electrically charged particles. It acts between charged particles and is the combination of all magnetic and electrical forces. The electromagnetic force can be attractive or repulsive. The electromagntic force is find out by F = (k*q1*q2)/r^2 where q1 and q2 are charges on two particles respectively and k is a constant whose value is 9.0 * 10^9 N-m^2/C^2.
+  </div>
+</div>
+<div class="collapse" id="nuclear">
+  <div class="card card-body">
+   The force occured betwween nucleus of an atom other than electromagnetic and gravitational forces are known as nucleus force . This force is shot range but yet it is the strongest force in the world. The changes of atom during a radiation is also done by force which is different from other forces and this force is known as weak forces.
+  </div>
+</div>
+<div class="collapse" id="nflm">
+  <div class="card card-body">
+   Newton's first law of motion states that if the (vector) sum of all the forces acting on a particle is zero then the particle remains unaccelarated (i.e., remains at rest or moveswith constant velocity)
+  </div>
+</div>
+<div class="collapse" id="nslm">
+  <div class="card card-body">
+   Newton's second law of motion states that the accelaration of a particle as measured from an inertial frame is given by the (vector) sum of all the forces acting on the particlee divided by its mass.
+  </div>
+</div>
+<div class="collapse" id="ntlm">
+  <div class="card card-body">
+   Newton's third law of motion states that every action has equal and opposite reaction.
+  </div>
+</div>
+<div class="collapse" id="inertia">
+  <div class="card card-body">
+   The unwillingness of a particle to change its state of state or of uniform motion along a straight line is called as inertia.
+  </div>
+</div>
+<div class="collapse" id="friction">
+  <div class="card card-body">
+   Friction is a force between two surfaces that are sliding, or trying to slide, across each other. For example, when you try to push a book along the floor, friction makes this difficult. Friction always works in the direction opposite to the direction in which the object is moving, or trying to move.
+  </div>
+</div>
+<div class="collapse" id="tff">
+  <div class="card card-body">
+   There are two types of frictional force<n/>
+   (i) Static friction :- When two bodies do not slip each other , the force of friction is called static friction.<n/>
+   (ii) Kinetic friction :- When two solid bodies slip over each other , the force of friction is called kinetic friction.
+  </div>
+</div>
+
+<hr/>
+<hr/>
+        Force is an interaction between two object. When you pull or push some object you exert a force on it. Force is an vector quantity. The SI unit of force is Newton (N).
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        	<b><span class="text-center" style="color:black">MECHANICS</span></b>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+      	<p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#circular" aria-expanded="false" aria-controls="circular">
+               Circular motion Basics
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tav" aria-expanded="false" aria-controls="tav">
+               Tangential accelaration
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#centripetal" aria-expanded="false" aria-controls="centripetal">
+               Centripetal accelaration
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ccf" aria-expanded="false" aria-controls="ccf">
+               Centrifugal and Coriolis Force
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#wet" aria-expanded="false" aria-controls="wet">
+               Work Energy Theorem
+            </button>
+            <hr/>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#com" aria-expanded="false" aria-controls="com">
+               Centre of mass
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#lmic" aria-expanded="false" aria-controls="lmic">
+               Linear momentum and its conservation
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ctc" aria-expanded="false" aria-controls="ctc">
+               Collision and its types
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cor" aria-expanded="false" aria-controls="coe">
+               Coefficient of restitution
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#impulse" aria-expanded="false" aria-controls="impulse">
+               Impulsive force
+            </button>
+            <hr/>
+            <hr/>
+        </p>
+<div class="collapse" id="circular">
+  <div class="card card-body">
+    The angle in radians (degrees, revolutions) through which a point or line has been rotated in a specified sense about a specified axis is called angular position. || The rate of change of angular position is called angular velocity. Similarly the rate of change of angular velocity is called angular accelaration.
+  </div>
+</div>
+<div class="collapse" id="tav">
+  <div class="card card-body">
+   Tangential velocity is the linear speed of any object moving along a circular path. Tangential acceleration is defined as the rate of change of tangential velocity of the matter in the circular path.
+  </div>
+</div>
+<div class="collapse" id="centripetal">
+  <div class="card card-body">
+   Centripetal acceleration is defined as the property of the motion of an object, traversing a circular path. Any object that is moving in a circle and has an acceleration vector pointed towards the center of that circle is known as Centripetal acceleration.
+  </div>
+</div>
+<div class="collapse" id="ccf">
+  <div class="card card-body">
+  Centrifugal force is a force that arises from the body's inertia and appears to act on a body that is moving in a circular path which is directed away from the centre around which the body is moving. In physics, the Coriolis force is an inertial or fictitious force that acts on objects that are in motion within a frame of reference that rotates with respect to an inertial frame.
+  </div>
+</div>
+<div class="collapse" id="wet">
+  <div class="card card-body">
+  The principle of work and kinetic energy (also known as the work-energy theorem) states that the work done by the sum of all forces acting on a particle equals the change in the kinetic energy of the particle.
+  </div>
+</div>
+<div class="collapse" id="com">
+  <div class="card card-body">
+  In physics, the center of mass of a distribution of mass in space is the unique point where the weighted relative position of the distributed mass sums to zero. This is the point to ehich a force may be applied to cause a linear accelaration without an angular accelaration.
+  </div>
+</div>
+<div class="collapse" id="lmic">
+  <div class="card card-body">
+  The linear momentum of a particle is defined as p = mv . The linear momentum of a system remains constant  if the external forces acting on the system add up to zero , this is known as the principle of conservation of linear momentum.
+  </div>
+</div>
+<div class="collapse" id="ctc">
+  <div class="card card-body">
+  In physics , a collision is any event in which two or more bodies exert forces on each other in a relatively short time. There are 3 types of collision - (i) Elastic collision :- In this type of collision kinetic energy remains constant  (ii) Inelastic collision :- In this type of collision some of the kinetic energy get lost.  (iii) Plastic collision :- In this type of collision one object get stuck to the other object resulting the loss of kinetic energy.
+  </div>
+</div>
+<div class="collapse" id="cor">
+  <div class="card card-body">
+  	The coefficient of restitution also denoted by (e) is the ratio of the final to initial relative velocity between two objects after they collide . It normally ranges from 0 to 1 where 1 would be a perfectly elastic collision.
+  </div>
+</div>
+<div class="collapse" id="impulse">
+  <div class="card card-body">
+  An impulsive force is a force that acts for a very short duration of time on an object. An impulsive force is mainly generated in a collision that results in a change in velocity or momentum of the one or all objects involved in the collision.
+  </div>
+</div>
+        Mechanics is the area of physics concerned with the motions of physical objects, more specifically the relationships among force, matter, and motion. Forces applied to objects result in displacements, or changes of an object's position relative to its environment.
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         <b><span class="text-center" style="color:black">ROTATIONAL MECHANICS</span></b>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+      	<p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#aor" aria-expanded="false" aria-controls="aor">
+               Axis of Rotation
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#torque" aria-expanded="false" aria-controls="torque">
+               Torque
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#amc" aria-expanded="false" aria-controls="amc">
+               Angular momentum and its conservation
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#mi" aria-expanded="false" aria-controls="mi">
+               Moment of Inertia
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#micm" aria-expanded="false" aria-controls="micm">
+               Moment of Inertia of continous mass
+            </button>
+            <hr/>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tpa" aria-expanded="false" aria-controls="tpa">
+               Theorem of Parallel axes
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pat" aria-expanded="false" aria-controls="pat">
+              Theorem of Perpendicular axes
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rolling" aria-expanded="false" aria-controls="rolling">
+               Rolling (Rotation + Translation)
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gyration" aria-expanded="false" aria-controls="gyration">
+               Radius of gyration
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ker" aria-expanded="false" aria-controls="ker">
+               Kinetic energy in rolling
+            </button>
+            <hr/>
+            <hr/>
+        </p>
+<div class="collapse" id="aor">
+  <div class="card card-body">
+    A displacement of a rigid body in which a given line is held fixed, is called rotation of the rigid body about the given line. The line itself is called the axis of rotation.
+  </div>
+</div>
+<div class="collapse" id="torque">
+  <div class="card card-body">
+    Torque is the measure of the force that can cause an object to rotate about an axis. Force is what causes an object to accelerate in linear kinematics. Similarly, torque is what causes an angular acceleration. Hence, torque can be defined as the rotational equivalent of linear force. Torque = r*F*sin(angle)
+  </div>
+</div>
+<div class="collapse" id="amc">
+  <div class="card card-body">
+    Angular momentum is the rotational equivalent of linear momentum. Angular moment of a particle about a point O is defined as l = r*p where p is the linear momentum and r is the position vector of the particle from the given point O. If the total external torque on a system is zero, its angular momentum remains constant. This is known as the principle of conservation of angular momentum. 
+  </div>
+</div>
+<div class="collapse" id="mi">
+  <div class="card card-body">.
+    The moment of inertia of a rigid body is a quantity that determines the torque needed for a desired angular acceleration about a rotational axis, akin to how mass determines the force needed for a desired acceleration.
+  </div>
+</div>
+<div class="collapse" id="micm">
+  <div class="card card-body">
+    Moment of inertia of a continious mass distribution is as follows :- <n/>
+    (i) Uniform rod about a perpendicular bisector : ML<sup>2</sup>/12
+    (ii) Circular ring about its axis (the line perpendicular to the plane of the ring through its centre) : MR<sup>2</sup> 
+    (iii) Uniform circular plate about its axis : MR<sup>2</sup>/2
+    (iv) Hollow cylinder about its axis : MR<sup>2</sup>
+    (v) Uniform solid cylinder about its axis : MR<sup>2</sup>/2
+  </div>
+</div>
+<div class="collapse" id="tpa">
+  <div class="card card-body">
+   The moment of inertia of a body about an axis parallel to the body passing through its center is equal to the sum of moment of inertia of body about the axis passing through the center and product of mass of the body times the square of distance between the two axes. It is the first theorem. I = I(0)+ Md^2, where d is the distance between previous axis and new axis
+  </div>
+</div>
+<div class="collapse" id="pat">
+  <div class="card card-body">
+   The perpendicular axis theorem states that the moment of inertia, for any axis which is perpendicular to the plane, is equal to the sum of any two perpendicular axes of the body which intersects with the first axis. I(z)=I(x)+I(y).
+  </div>
+</div>
+<div class="collapse" id="rolling">
+  <div class="card card-body">
+   Rolling is a type of motion that combines rotation and translation of that object with respect to a surface (either one or the other moves), such that, if ideal conditions exist, the two are in contact with each other without sliding. Rolling where there is no sliding is referred to as pure rolling. By definition, there is no sliding when there is a frame of reference in which all points of contact on the rolling object have the same velocity as their counterparts on the surface on which the object rolls; in particular, for a frame of reference in which the rolling plane is at rest.
+  </div>
+</div>
+<div class="collapse" id="gyration">
+  <div class="card card-body">
+   Radius of gyration or gyradius of a body about an axis of rotation is defined as the radial distance to a point which would have a moment of inertia the same as the body's actual distribution of mass, if the total mass of the body were concentrated there. Mathematically the radius of gyration is the root mean square distance of the object's parts from either its center of mass or a given axis, depending on the relevant application. It is actually the perpendicular distance from point mass to the axis of rotation. One can represent a trajectory of a moving point as a body. Then radius of gyration can be used to characterize the typical distance travelled by this point.
+  </div>
+</div>
+<div class="collapse" id="ker">
+  <div class="card card-body">
+   If an object is rolling without slipping, then its kinetic energy can be expressed as the sum of the translational kinetic energy of its center of mass plus the rotational kinetic energy about the center of mass.
+  </div>
+</div>
+
+        Objects showing rotational motion move with an angular velocity. Both these velocities are constant unless changed externally. In the translational motion, the acceleration is inversely proportional to mass and directly proportional to the force. In rotational motion, force is substituted by torque.
+      </div>
+    </div>
+  </div>
+  <p>
+  </p>
+</div>
+
+
+
+
+
+  
+
+</div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="questionbank.html" class="active">Question Bank</a></li>
+                        <li><a href="askthequestion.html">Ask the Question</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:ols2021@gmail.com">ols2021@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/aditya.maurya.710/"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/aditya-maurya-810210189"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/Adityamaurya217"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="https://www.youtube.com/channel/UCxHgnClhJrF1z64GhVo9ALA"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                       
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2021 Online Learning Site (OLS)</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
